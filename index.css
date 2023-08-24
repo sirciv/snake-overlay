@@ -1,0 +1,49 @@
+.app {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.app .score {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  padding: 20px;
+  color: green;
+  font: normal 65px 'Press Start 2P', cursive;
+  overflow: hidden;
+  user-select: none;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 50px;
+}
+
+img {
+  display: block;
+  margin: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  max-width: 200px;
+}
+
+#bottom-message {
+  color: #1b1b1b;
+  position:fixed;
+  bottom:20px;
+  right:1.5vw;
+  font-size: 14px;
+}
+
+h5 {
+  display: block;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
+}

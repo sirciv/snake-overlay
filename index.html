@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>spencer allan -- snake overlay</title>       
+        <style>
+            @import url('index.css');
+        </style>
+        <script type="text/javascript" src="app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    </head>
+    <body>
+        <h2>snake easter egg</h2>
+        <p>this is sample text to show how the overlay works</p>
+        <p>my personal best score is 41 so far</p>
+        <p>will be sure to report back if I get something better</p>
+        <div class="container">
+            <div class="play-btn" onclick="gameInit()">
+                <img alt="click me" src="https://media.cnn.com/api/v1/images/stellar/prod/220320181933-01-rare-snake-alabama-handout.jpg">
+                <h5>(click me)</h5>
+            </div>
+            <script>
+                function gameInit() {
+                    $(document.body).append("<div id='app' class='app'><canvas></canvas><div class='score'>0</div></div>");
+                    snakeGame.init();
+                }
+            </script>
+        </div>
+    </body>
+    <footer>
+        <div class="footer">
+            <div>
+                <a id="bottom-message" href="https://www.spencerallan.net/content/about.html">(c) spencer allan, 2023.</a>
+            </div>
+        </div>
+    </footer>
